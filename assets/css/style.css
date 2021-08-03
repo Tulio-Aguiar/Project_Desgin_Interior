@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+/* Farbe: #2e2e2e / #fff / #000 / #1d2c2f   */
+
+
+/* font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;    */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+header .interior {
+    display: flex;
+    width: 50%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*colocou em coluna os valores*/
+}
+
+header .interior h1 {
+    font-size: 100px;
+}
+
+header .fotoheader {
+    background-image: url('../img/design-interior-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background: #2e2e2e;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Work Sans', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*--- section one ---*/
+
+#one {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20vh 0 10vh 0;
+    background: #2e2e2e;
+}
+
+#one .imageminterior {
+    width: 60%;
+}
+
+#one .imageminterior1 {
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 70px;
+    justify-content: center;
+}
+
+#one .imageminterior img {
+    width: 100%;
+}
+
+#one .imageminterior1 h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lora';
+    font-weight: 100;
+}
+
+#one .imageminterior1 p {
+    margin-top: 2rem;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/*---section ---*/
+
+#two {
+    flex-direction: column;
+    padding: 5% 0;
+}
+
+#two .featured {
+    width: 50%;
+    text-align: justify;
+    margin: 5% auto;
+}
+
+#two .featured h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lora';
+    line-height: 2em;
+    font-weight: 400;
+}
+
+#two .featured h3 {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    text-overflow: clip;
+    letter-spacing: 10px;
+}
+
+
+/*--- Gallery---*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery figure {
+    width: 30%;
+    min-width: 30vh;
+    padding: 4% 0;
+}
+
+.gallery figure img {
+    width: 100%;
+}
+
+.gallery figcaption {
+    text-align: center;
+    color: gray;
+}
+
+.video-container {
+    position: relative;
+    width: 30%;
+    min-width: 30vh;
+    padding-bottom: 17%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 2% 0;
+}
+
+
+/*--- section three---*/
+
+#three {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20vh 0 10vh 0;
+    background: #2e2e2e;
+    color: #fff;
+}
+
+#three>div {
+    width: 45%;
+    height: 60vh;
+    justify-content: center;
+}
+
+#three h2 {
+    font-size: 60px;
+    margin-left: 140px;
+    margin-bottom: 50px;
+}
+
+#three p {
+    width: 50%;
+    font-size: 25px;
+    margin-left: 140px;
+    line-height: 2em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+#three aside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: right;
+    flex-direction: column;
+}
+
+form {
+    width: 50%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+form * {
+    outline: none;
+    font-family: "Work Sans", sans-serif;
+}
+
+form>label {
+    margin-bottom: 0.5%;
+    font-family: "Lora", serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.1vh;
+}
+
+input,
+textarea {
+    margin-bottom: 5%;
+    padding: 1%;
+}
+
+input[type="button"] {
+    align-self: flex-start;
+    padding: 1% 3%;
+    font-weight: 600;
+}
+
+
+/*---footer---*/
+
+footer {
+    padding: 1% 3%;
+    background: #1d2c2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1em;
+    font-family: "Lora", serif;
+}
+
+footer>ul {
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+}
+
+footer>ul>li {
+    margin: 0 7%;
+}
+
+footer a {
+    font-family: "Lora", serif;
+    text-decoration: none;
+    color: #fff;
+}
